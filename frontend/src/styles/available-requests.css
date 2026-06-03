@@ -1,0 +1,30 @@
+.available-requests-container {
+  width: 100%;
+}
+
+.available-requests-container h3 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 22px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.claim-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--success-color);
+  margin-top: 15px;
+}
+
+.claim-btn:hover {
+  background-color: #20c997;
+}

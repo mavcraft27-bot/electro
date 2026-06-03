@@ -1,0 +1,31 @@
+.create-request-container {
+  width: 100%;
+}
+
+.create-request-container h3 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 22px;
+}
+
+.create-request-container form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.create-request-container textarea {
+  grid-column: 1 / -1;
+}
+
+.create-request-container button {
+  grid-column: 1 / -1;
+  padding: 12px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .create-request-container form {
+    grid-template-columns: 1fr;
+  }
+}

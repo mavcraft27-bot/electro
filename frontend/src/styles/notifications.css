@@ -1,0 +1,48 @@
+.notifications-container {
+  width: 100%;
+}
+
+.notifications-container h4 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.notification {
+  background: #f8f9fa;
+  border-left: 4px solid var(--primary-color);
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.notification h5 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.notification p {
+  margin: 0 0 5px 0;
+  color: var(--secondary-color);
+}
+
+.notification small {
+  color: #999;
+}
+
+.notification.new-request {
+  border-left-color: var(--info-color);
+  background-color: rgba(23, 162, 184, 0.1);
+}
+
+.notification.request-claimed {
+  border-left-color: var(--success-color);
+  background-color: rgba(40, 167, 69, 0.1);
+}

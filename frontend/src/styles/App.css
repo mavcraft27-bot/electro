@@ -1,0 +1,77 @@
+/* Global Styles */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+  --border-color: #dee2e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.error-message {
+  background-color: var(--danger-color);
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.success-message {
+  background-color: var(--success-color);
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
